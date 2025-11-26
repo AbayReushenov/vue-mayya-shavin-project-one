@@ -1,11 +1,30 @@
-<script setup lang="ts"></script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div class="main-app">
+    <h1>My Vue.js project {{ title }}</h1>
+    <p>
+      Hello world!
+    </p>
+  </div>
 </template>
 
-<style scoped></style>
+<script setup lang="ts">
+type Data = {
+  title: string
+}
+
+const title = "Big Apple" 
+
+
+</script>
+
+<style scoped>
+.main-app {
+  background: lightblue;
+}
+h1, p {
+  color: red;
+  text-align: center;
+}
+
+</style>
